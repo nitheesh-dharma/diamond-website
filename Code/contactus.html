@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diamond Fourth Floor</title>
+  <link rel="stylesheet" href = "website.css">
+</head>
+<body>
+<!--Navigation area  -->
+
+<nav>
+  <ul>
+    <li><a href = "index.html">Home</a></li>
+    <li><a href = "about.html"> About </a> </li>
+    <li><a href = "studentexperience.html"> Student Experience </a></li> 
+    <li><a href = "contactus.html"> Contact us</a> </li>
+    
+    <li><a href = "accessibility.html"> Accessibility </a></li> 
+ </ul>
+       
+</nav>
+
+<main>
+   <form name="myform" action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="get">
+   <h1>Contact us </h1>
+     <!-- Create an input field so that the email is sent to my university account Taken from: form2.html in AppendixD-->
+     <input type="hidden" name="recipient" value="ndharmapalan1@sheffield.ac.uk">
+    <input type="hidden" name="subject" value="Contact Us" />
+     
+     
+    <!--Create a label and input for name and email -->
+    <p>
+     <label for="name">Name</label>
+     <input type =" text" id = "name" placeholder ="Enter your name..." class = "maxwidth" maxlength = "40"  size = "20" required ></input>
+    </p>
+    
+    <p>
+     <label for = "email">Your email</label>
+     <input type = "email" id ="email" placeholder = "Enter your email..." class = "maxwidth"  maxlength = "40"  size = "20" required></input>
+    </p>
+      <!--Create a label and textarea for the message --> 
+     <p> 
+      <label for = "message"> Message</label>
+     <textarea id = "message" name = "message" placeholder = "Write your message..." class = "maxwidth" row="5" cols="10" required></textarea>
+    </p>
+    
+    <!--Submit button-->
+    <p class = "button">
+     <input type = "submit" value = "Send" id = "send">
+    </p>
+    
+   </form>
+</main>
+  
+</body>
+</html>
